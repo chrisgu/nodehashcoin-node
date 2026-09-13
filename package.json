@@ -1,0 +1,35 @@
+{
+  "name": "nodehashcoin-node",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "description": "NodeHashCoin validation node — BLAKE3 consensus, genesis, and HTTP gateway",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./consensus": "./src/consensus.ts"
+  },
+  "bin": {
+    "nhc-node": "./src/cli.ts",
+    "nhc-miner": "./src/miner-cli.ts"
+  },
+  "scripts": {
+    "genesis": "tsx src/genesis-cli.ts",
+    "start": "tsx src/cli.ts",
+    "mine": "tsx src/miner-cli.ts",
+    "test": "tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@noble/ed25519": "^3.0.0",
+    "@noble/hashes": "^2.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "hash": "0000cdf9c82f66f6a9325091bc175f463dc2590bea5e0366c51b73a35176fa86",
+  "height": 0,
+  "issued": "2592030000000",
+  "block": {
+    "header": {
+      "version": 1,
+      "prevHash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "merkleRoot": "c5220b656e22a39431a9b3787d0f177e21f829b66abf3966596c0f4010c052fe",
+      "timestamp": 1757721600,
+      "bits": 520159231,
+      "nonce": "203948",
+      "extraNonce": 0
+    },
+    "txs": [
+      {
+        "version": 1,
+        "coinbase": true,
+        "extraNonce": 0,
+        "message": "NodeHashCoin / MoltAd / nodehashcoin.com",
+        "inputs": [],
+        "outputs": [
+          {
+            "address": "nhc14c3f24088130229b6363100c26924a1c1c8d1917",
+            "amount": "2592030000000"
+          }
+        ]
+      }
+    ]
+  }
+}
